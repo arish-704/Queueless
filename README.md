@@ -1,6 +1,6 @@
-# QueueLess Backend
+# QueueLess Platform
 
-QueueLess is a smart hospital queue and appointment backend built with Java 17 and Spring Boot 4. It supports JWT-based authentication, doctor and department management, appointment booking, token queue tracking, emergency priority handling, wait-time prediction, and admin analytics.
+QueueLess is a smart hospital queue and appointment platform. It includes a Spring Boot backend and a React frontend for patients, doctors, and hospital administrators.
 
 The current stable testing mode is:
 
@@ -21,6 +21,29 @@ The current stable testing mode is:
 - Health endpoint, logs, and OpenAPI support
 - Docker and docker-compose setup
 - MySQL-first runtime configuration with H2-backed automated tests
+- React frontend with role-aware dashboards
+- motion-based landing page and lazy-loaded 3D hero
+- frontend integration layer for auth, appointments, queue, analytics, and notifications
+
+## Frontend
+
+Frontend stack:
+
+- React
+- Vite
+- TypeScript
+- Tailwind CSS
+- Framer Motion
+- Three.js
+
+Frontend folder:
+
+- [frontend](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/frontend)
+
+Frontend docs:
+
+- [frontend/README.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/frontend/README.md)
+- [frontend-integration.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/frontend-integration.md)
 
 ## Unique backend features
 
@@ -118,6 +141,14 @@ mvn spring-boot:run
 1. Copy `.env.example` to `.env`.
 2. Run `docker compose up --build`.
 3. The app will be available at `http://localhost:8082`.
+
+## Documentation map
+
+- [backend-architecture.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/backend-architecture.md)
+- [project-feature-guide.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/project-feature-guide.md)
+- [postman-guide.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/postman-guide.md)
+- [postman-chronological-test-plan.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/postman-chronological-test-plan.md)
+- [frontend-integration.md](/c:/Users/arish/OneDrive/Desktop/Final_year_project/queueless/docs/frontend-integration.md)
 
 ## Default bootstrap admin
 
